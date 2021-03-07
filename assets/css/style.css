@@ -37,6 +37,11 @@ a#viewHS {
     margin: 3px;
 }
 
+.startQuizBtn:hover {
+    cursor: pointer;
+    background-color: rgb(124, 42, 116);
+}
+
 div {
     display: flexbox;
     margin: auto;
@@ -88,9 +93,12 @@ li {
 
 li:hover {
     background-color: rgb(124, 42, 116);
+    cursor: pointer;
 }
 
-.alert {
+.alert,
+#correctAlert,
+#incorrectAlert {
     color: rgb(120, 122, 124);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
