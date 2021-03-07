@@ -1,19 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     font-family: Verdana, Geneva, 'Tahoma', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     width: 95%;
 }
 
-li {
-    list-style-type: none;
+p {
+    color: black;
+    font-size: 20px;
 }
 
-a {
+a#viewHS {
+    list-style-type: none;
     text-decoration: none;
     color: rgb(124, 42, 116);
+}
+
+.codingQuizScreen {
+    z-index: 10;
+}
+
+.startQuizBtn {
+    color: white;
+    background-color: rgb(70, 22, 65);
+    border: indigo solid 5px;
+    border-radius: 5px;
+    width: max-content;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
 }
 
 div {
@@ -24,21 +45,56 @@ div {
     text-align: center;
 }
 
+/* Hides the questions on initial load */
+div#questionOne,
+div#questionTwo,
+div#questionThree,
+div#questionFour,
+div#questionFive {
+    display: none;
+}
+
+/*Make the cards sit on top of eachother */
+.questionArea {
+    position: relative;
+}
+
+.codingQuizScreen,
+#questionOne,
+#questionTwo,
+#questionThree,
+#questionFour,
+#questionFive {
+    position: absolute;
+    margin: auto;    
+}
+
+/* Sets the width of the choices so they don't span across the whole page */
 ol {
     width: 50%;
     margin: auto;
 }
 
-#multipleChoice {
+/* Make the choices change color when hovered over */
+li {
     color: white;
     background-color: rgb(70, 22, 65);
-    border-radius: 3px;
+    border-radius: 5px;
     width: max-content;
     text-align: center;
     padding: 3px;
     margin: 3px;
 }
 
-#multipleChoice:hover {
+li:hover {
     background-color: rgb(124, 42, 116);
+}
+
+.alert {
+    color: rgb(120, 122, 124);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    display: none;
 }
