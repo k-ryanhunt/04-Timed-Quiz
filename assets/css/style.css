@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, 'Tahoma', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 95%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(124, 42, 116);
+}
+
+div {
+    display: flexbox;
+    margin: auto;
+    width: 90%;
+    padding: 75px 15px;
+    text-align: center;
+}
+
+ol {
+    width: 50%;
+    margin: auto;
+}
+
+#multipleChoice {
+    color: white;
+    background-color: rgb(70, 22, 65);
+    border-radius: 3px;
+    width: max-content;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+#multipleChoice:hover {
+    background-color: rgb(124, 42, 116);
+}
