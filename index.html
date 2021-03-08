@@ -12,8 +12,8 @@
     <p><a id="viewHS" href="#">View Highscores</a></p>
     <p>Time: <span id="gameTimer">60</span></p>
 </header>
-<body>
 
+<body>
     <section class = 'questionArea'>
         <div class='codingQuizScreen' id='rules'>
             <h1>Coding Quiz Challenge</h1>
@@ -24,10 +24,10 @@
         <div id="questionOne" class="question">
             <h1>Commonly used data types DO NOT include:</h1>
             <ol>
-                <li id='incorrectChoice'>1. strings</li>
-                <li id='incorrectChoice'>2. booleans</li>
-                <li id='correctChoice'>3. alerts</li>
-                <li id='incorrectChoice'>4. numbers</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>1. strings</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>2. booleans</li>
+                <li onclick='correctAlertMessage()' id='correctChoice'>3. alerts</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>4. numbers</li>
             </ol>
             <p class='alert' id='correctAlert'>Correct! Great job!</p>
             <p class='alert' id='incorrectAlert'>Uh Oh! That is incorrect.</p>
@@ -35,10 +35,10 @@
         <div id="questionTwo" class="question">
             <h1>The condition with a if/else statement is enclosed with _____________.</h1>
             <ol>
-                <li id='incorrectChoice'>1. quotes</li>
-                <li id='incorrectChoice'>2. curly brackets</li>
-                <li id='correctChoice'>3. parenthesis</li>
-                <li id='incorrectChoice'>4. square brackets</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>1. quotes</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>2. curly brackets</li>
+                <li onclick='correctAlertMessage()' id='correctChoice'>3. parenthesis</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>4. square brackets</li>
             </ol>
             <p class='alert' id='correctAlert'>Correct! Great job!</p>
             <p class='alert' id='incorrectAlert'>Uh Oh! That is incorrect.</p>
@@ -46,10 +46,10 @@
         <div id="questionThree" class="question">
             <h1>Arrays in JavaScript can be used to store:</h1>
             <ol>
-                <li id='incorrectChoice'>1. numbers and strings</li>
-                <li id='incorrectChoice'>2. other arrays</li>
-                <li id='incorrectChoice'>3. booleans</li>
-                <li id='correctChoice'>4. all of the above</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>1. numbers and strings</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>2. other arrays</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>3. booleans</li>
+                <li onclick='correctAlertMessage()' id='correctChoice'>4. all of the above</li>
             </ol>
             <p class='alert' id='correctAlert'>Correct! Great job!</p>
             <p class='alert' id='incorrectAlert'>Uh Oh! That is incorrect.</p>
@@ -57,10 +57,10 @@
         <div id="questionFour" class="question">
             <h1>String values must be enclosed within ________ when being assigned to variables.</h1>
             <ol>
-                <li id='incorrectChoice'>1. commas</li>
-                <li id='incorrectChoice'>2. curly brackets</li>
-                <li id='correctChoice'>3. quotes</li>
-                <li id='incorrectChoice'>4. parenthesis</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>1. commas</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>2. curly brackets</li>
+                <li onclick='correctAlertMessage()' id='correctChoice'>3. quotes</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>4. parenthesis</li>
             </ol>
             <p class='alert' id='correctAlert'>Correct! Great job!</p>
             <p class='alert' id='incorrectAlert'>Uh Oh! That is incorrect.</p>
@@ -68,15 +68,16 @@
         <div id="questionFive" class="question">
             <h1>A very useful tool used during development and debugging for printing content to the debugger is:</h1>
             <ol>
-                <li id='incorrectChoice'>1. JavaScript</li>
-                <li id='incorrectChoice'>2. terminal/bash</li>
-                <li id='incorrectChoice'>3. for loops</li>
-                <li id='correctChoice'>4. console.log</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>1. JavaScript</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>2. terminal/bash</li>
+                <li onclick='incorrectAlertMessage()' class='incorrectChoice'>3. for loops</li>
+                <li onclick='correctAlertMessage()' id='correctChoice'>4. console.log</li>
             </ol>
             <p class='alert' id='correctAlert'>Correct! Great job!</p>
             <p class='alert' id='incorrectAlert'>Uh Oh! That is incorrect.</p>
         </div>
     </section>
 </body>
+
 <script src="./assets/script.js"></script>
 </html>
