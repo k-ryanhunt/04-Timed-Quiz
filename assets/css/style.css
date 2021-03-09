@@ -56,7 +56,8 @@ div#questionOne,
 div#questionTwo,
 div#questionThree,
 div#questionFour,
-div#questionFive {
+div#questionFive,
+div#inputInitialScreen {
   display: none;
 }
 
@@ -70,7 +71,8 @@ div#questionFive {
 #questionTwo,
 #questionThree,
 #questionFour,
-#questionFive {
+#questionFive,
+#inputInitialScreen {
   position: absolute;
   margin: auto;
 }
@@ -97,8 +99,7 @@ li:hover {
   cursor: pointer;
 }
 
-p#correctAlert.alert,
-p#incorrectAlert.alert {
+.alert {
   color: rgb(120, 122, 124);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
