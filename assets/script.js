@@ -116,6 +116,10 @@ function incorrectAlertMessage5() {
 function resultScreen() {
   document.getElementById("inputInitialScreen").style.display = "block";
   document.getElementById("questionFive").style.display = "none";
+  document.getElementById("questionFour").style.display = "none";
+  document.getElementById("questionThree").style.display = "none";
+  document.getElementById("questionTwo").style.display = "none";
+  document.getElementById("questionOne").style.display = "none";
   results = setInterval(function () {
     score;
     grade.textContent = score + secondsAllowed;
@@ -125,25 +129,31 @@ function resultScreen() {
 
 startQuizBtn.addEventListener("click", startQuiz);
 
-
 var initialFormEl = document.getElementById("enterInitials");
-var userInput = document.getElementById('userInput');
+var userInput = document.getElementById("userInput");
 var playerListEl = document.getElementById("player-list");
-var submitBtn = document.getElementsByClassName("submitBtn");
+var submitBtn = document.querySelector("#submitBtn");
 
 function handleFormSubmit(event) {
   event.preventDefault();
-  var playerName = {
+
+  var userText = userInput.value.trim();
+
+  var storedScores = JSON.parse(localStorage.getItem("score")) || [];
+  var namePlayer = {
     initials: userInput.value,
     score: grade.textContent,
   };
-  playerListEl.append(userInput.value + " - " + grade.textContent + " POINTS");
-  localStorage.setItem("playerName", JSON.stringify(playerName));
-  
-  var userText = userInput.value.trim();
+
+  storedScores.push(namePlayer);
+  localStorage.setItem("score", JSON.stringify(storedScores));
 
   if (userText === "") {
     return;
+  } else {
+    playerListEl.append(
+      userInput.value + " - " + grade.textContent + " POINTS"
+    );
   }
 }
 
