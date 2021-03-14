@@ -10,7 +10,6 @@ var correctChoice = document.getElementById("correctChoice");
 var incorrectChoice = document.getElementsByClassName(".incorrectChoice");
 
 // Sets the timer and produces the first question
-
 function startQuiz() {
   timer = setInterval(function () {
     secondsAllowed--;
@@ -136,24 +135,18 @@ var submitBtn = document.querySelector("#submitBtn");
 
 function handleFormSubmit(event) {
   event.preventDefault();
-
   var userText = userInput.value.trim();
-
   var storedScores = JSON.parse(localStorage.getItem("score")) || [];
   var namePlayer = {
     initials: userInput.value,
     score: grade.textContent,
   };
-
   storedScores.push(namePlayer);
   localStorage.setItem("score", JSON.stringify(storedScores));
-
   if (userText === "") {
     return;
   } else {
-    playerListEl.append(
-      userInput.value + " - " + grade.textContent + " POINTS"
-    );
+    playerListEl.append(userInput.value + " - " + grade.textContent + " POINTS");
   }
 }
 

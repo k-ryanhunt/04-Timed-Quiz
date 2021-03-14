@@ -8,4 +8,6 @@ for (let i = 0; i < storedScores.length; i++) {
   playerListEl.append(ul);
 }
 
-if (storedScores.length >= )
+// if (storedScores.length >= 10) {
+//   localStorage.removeItem("score")
+// }
