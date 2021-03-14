@@ -1,87 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<header>
-    <p><a id="viewHS" href="#">View Highscores</a></p>
+  <header>
+    <p><a id="viewHS" href="viewHS.html">View Highscores</a></p>
     <p>Time: <span id="gameTimer">60</span></p>
-</header>
+  </header>
 
-<body>
-    <section class = 'questionArea'>
-        <div class='codingQuizScreen' id='rules'>
-            <h1>Coding Quiz Challenge</h1>
-            <p class='ruleSet'>Try to answer the following code-related questions within the time limit.
-                <br>Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
-            <button class='startQuizBtn'>Start Quiz</button>
-        </div>
-        <div id="questionOne" class="question">
-            <h1>Commonly used data types DO NOT include:</h1>
-            <ol>
-                <li onclick='incorrectAlertMessage1()' class='incorrectChoice'>1. strings</li>
-                <li onclick='incorrectAlertMessage1()' class='incorrectChoice'>2. booleans</li>
-                <li onclick='correctAlertMessage1()' id='correctChoice'>3. alerts</li>
-                <li onclick='incorrectAlertMessage1()' class='incorrectChoice'>4. numbers</li>
-            </ol>
-            <p class='alert' id='correctAlert1'>Correct! Great job!</p>
-            <p class='alert' id='incorrectAlert1'>Uh Oh! That is incorrect.</p>
-        </div>
-        <div id="questionTwo" class="question">
-            <h1>The condition with a if/else statement is enclosed with _____________.</h1>
-            <ol>
-                <li onclick='incorrectAlertMessage2()' class='incorrectChoice'>1. quotes</li>
-                <li onclick='incorrectAlertMessage2()' class='incorrectChoice'>2. curly brackets</li>
-                <li onclick='correctAlertMessage2()' id='correctChoice'>3. parenthesis</li>
-                <li onclick='incorrectAlertMessage2()' class='incorrectChoice'>4. square brackets</li>
-            </ol>
-            <p class='alert' id='correctAlert2'>Correct! Great job!</p>
-            <p class='alert' id='incorrectAlert2'>Uh Oh! That is incorrect.</p>
-        </div>
-        <div id="questionThree" class="question">
-            <h1>Arrays in JavaScript can be used to store:</h1>
-            <ol>
-                <li onclick='incorrectAlertMessage3()' class='incorrectChoice'>1. numbers and strings</li>
-                <li onclick='incorrectAlertMessage3()' class='incorrectChoice'>2. other arrays</li>
-                <li onclick='incorrectAlertMessage3()' class='incorrectChoice'>3. booleans</li>
-                <li onclick='correctAlertMessage3()' id='correctChoice'>4. all of the above</li>
-            </ol>
-            <p class='alert' id='correctAlert3'>Correct! Great job!</p>
-            <p class='alert' id='incorrectAlert3'>Uh Oh! That is incorrect.</p>
-        </div>
-        <div id="questionFour" class="question">
-            <h1>String values must be enclosed within ________ when being assigned to variables.</h1>
-            <ol>
-                <li onclick='incorrectAlertMessage4()' class='incorrectChoice'>1. commas</li>
-                <li onclick='incorrectAlertMessage4()' class='incorrectChoice'>2. curly brackets</li>
-                <li onclick='correctAlertMessage4()' id='correctChoice'>3. quotes</li>
-                <li onclick='incorrectAlertMessage4()' class='incorrectChoice'>4. parenthesis</li>
-            </ol>
-            <p class='alert' id='correctAlert4'>Correct! Great job!</p>
-            <p class='alert' id='incorrectAlert4'>Uh Oh! That is incorrect.</p>
-        </div>
-        <div id="questionFive" class="question">
-            <h1>A very useful tool used during development and debugging for printing content to the debugger is:</h1>
-            <ol>
-                <li onclick='incorrectAlertMessage5()' class='incorrectChoice'>1. JavaScript</li>
-                <li onclick='incorrectAlertMessage5()' class='incorrectChoice'>2. terminal/bash</li>
-                <li onclick='incorrectAlertMessage5()' class='incorrectChoice'>3. for loops</li>
-                <li onclick='correctAlertMessage5()' id='correctChoice'>4. console.log</li>
-            </ol>
-            <p class='alert' id='correctAlert5'>Correct! Great job!</p>
-            <p class='alert' id='incorrectAlert5'>Uh Oh! That is incorrect.</p>
-        </div>
-        <div id="inputInitialScreen" class="endQuiz">
-            <h1>All done!</h1>
-            <p class='resultScreen'>Your final score is <span id='grade'>0</span>%.</p>
-        </div>
+  <body>
+    <section class="questionArea">
+      <div class="codingQuizScreen" id="rules">
+        <h1>Coding Quiz Challenge</h1>
+        <p class="ruleSet">
+          Try to answer the following code-related questions within the time
+          limit. <br />Keep in mind that incorrect answers will penalize your
+          score/time by 10 seconds!
+        </p>
+        <button class="startQuizBtn">Start Quiz</button>
+      </div>
+      <div id="questionOne" class="question">
+        <h1>Commonly used data types DO NOT include:</h1>
+        <ol>
+          <li onclick="incorrectAlertMessage1()" class="incorrectChoice">
+            1. strings
+          </li>
+          <li onclick="incorrectAlertMessage1()" class="incorrectChoice">
+            2. booleans
+          </li>
+          <li onclick="correctAlertMessage1()" id="correctChoice">3. alerts</li>
+          <li onclick="incorrectAlertMessage1()" class="incorrectChoice">
+            4. numbers
+          </li>
+        </ol>
+        <p class="alert" id="correctAlert1">&#10004;</p>
+        <p class="alert" id="incorrectAlert1">&#10008;</p>
+      </div>
+      <div id="questionTwo" class="question">
+        <h1>
+          The condition with a if/else statement is enclosed with _____________.
+        </h1>
+        <ol>
+          <li onclick="incorrectAlertMessage2()" class="incorrectChoice">
+            1. quotes
+          </li>
+          <li onclick="incorrectAlertMessage2()" class="incorrectChoice">
+            2. curly brackets
+          </li>
+          <li onclick="correctAlertMessage2()" id="correctChoice">
+            3. parenthesis
+          </li>
+          <li onclick="incorrectAlertMessage2()" class="incorrectChoice">
+            4. square brackets
+          </li>
+        </ol>
+        <p class="alert" id="correctAlert2">&#10004;</p>
+        <p class="alert" id="incorrectAlert2">&#10008;</p>
+      </div>
+      <div id="questionThree" class="question">
+        <h1>Arrays in JavaScript can be used to store:</h1>
+        <ol>
+          <li onclick="incorrectAlertMessage3()" class="incorrectChoice">
+            1. numbers and strings
+          </li>
+          <li onclick="incorrectAlertMessage3()" class="incorrectChoice">
+            2. other arrays
+          </li>
+          <li onclick="incorrectAlertMessage3()" class="incorrectChoice">
+            3. booleans
+          </li>
+          <li onclick="correctAlertMessage3()" id="correctChoice">
+            4. all of the above
+          </li>
+        </ol>
+        <p class="alert" id="correctAlert3">&#10004;</p>
+        <p class="alert" id="incorrectAlert3">&#10008;</p>
+      </div>
+      <div id="questionFour" class="question">
+        <h1>
+          String values must be enclosed within ________ when being assigned to
+          variables.
+        </h1>
+        <ol>
+          <li onclick="incorrectAlertMessage4()" class="incorrectChoice">
+            1. commas
+          </li>
+          <li onclick="incorrectAlertMessage4()" class="incorrectChoice">
+            2. curly brackets
+          </li>
+          <li onclick="correctAlertMessage4()" id="correctChoice">3. quotes</li>
+          <li onclick="incorrectAlertMessage4()" class="incorrectChoice">
+            4. parenthesis
+          </li>
+        </ol>
+        <p class="alert" id="correctAlert4">&#10004;</p>
+        <p class="alert" id="incorrectAlert4">&#10008;</p>
+      </div>
+      <div id="questionFive" class="question">
+        <h1>
+          A very useful tool used during development and debugging for printing
+          content to the debugger is:
+        </h1>
+        <ol>
+          <li onclick="incorrectAlertMessage5()" class="incorrectChoice">
+            1. JavaScript
+          </li>
+          <li onclick="incorrectAlertMessage5()" class="incorrectChoice">
+            2. terminal/bash
+          </li>
+          <li onclick="incorrectAlertMessage5()" class="incorrectChoice">
+            3. for loops
+          </li>
+          <li onclick="correctAlertMessage5()" id="correctChoice">
+            4. console.log
+          </li>
+        </ol>
+        <p class="alert" id="correctAlert5">&#10004;</p>
+        <p class="alert" id="incorrectAlert5">&#10008;</p>
+      </div>
+      <div id="inputInitialScreen" class="endQuiz">
+        <h1 class="resultScreen">
+          You scored <span id="grade">0</span> points!
+        </h1>
+        <br />
+        <br />
+        <br />
+        <h2>Add yourself to the Highscores!</h2>
+        <form id="enterInitials">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="enter your initials here"
+          />
+          <button class="submitBtn">SUBMIT</button>
+        </form>
+        <ul id="player-list"></ul>
+      </div>
     </section>
-</body>
+  </body>
 
-<script src="./assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./assets/script.js"></script>
 </html>
