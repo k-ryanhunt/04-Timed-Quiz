@@ -15,7 +15,7 @@ function clearScores() {
     return;
   }
   localStorage.clear();
-  ul.textContent = `No Highscores have been detected`;
+  ul.textContent = ``;
 }
 
 clear.addEventListener("click", clearScores);
