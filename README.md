@@ -19,3 +19,4 @@ We were tasked with creating a quiz that displays new questions as you click thr
 ![Screenshot](./assets/images/highscores.png)
 
 ## Take the Quiz here!
+https://k-ryanhunt.github.io/Timed-Quiz/
