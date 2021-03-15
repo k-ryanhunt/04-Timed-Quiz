@@ -1,6 +1,6 @@
 * {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   background-color: rgb(31, 31, 31);
   color: white;
 }
@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   width: 90%;
 }
 
@@ -99,7 +99,7 @@ li {
 }
 
 li:hover {
-  font-size: 26px;
+  font-size: 31px;
   color: rgb(206, 10, 118);
   background-color: rgb(91, 193, 200);
   cursor: pointer;
@@ -163,6 +163,7 @@ ul {
   padding-inline-start: 0px;
   font-size: 50px;
   color: indianred;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 992px) {

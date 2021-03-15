@@ -30,14 +30,14 @@ function questionOne() {
 
 function correctAlertMessage1() {
   document.getElementById("correctAlert1").style.display = "block";
-  setTimeout(questionTwo, "500");
+  setTimeout(questionTwo, "300");
   score += 20;
 }
 
 function incorrectAlertMessage1() {
   document.getElementById("incorrectAlert1").style.display = "block";
   secondsAllowed -= 5;
-  setTimeout(questionTwo, "500");
+  setTimeout(questionTwo, "300");
 }
 
 //Question Two
@@ -48,14 +48,14 @@ function questionTwo() {
 
 function correctAlertMessage2() {
   document.getElementById("correctAlert2").style.display = "block";
-  setTimeout(questionThree, "500");
+  setTimeout(questionThree, "300");
   score += 20;
 }
 
 function incorrectAlertMessage2() {
   document.getElementById("incorrectAlert2").style.display = "block";
   secondsAllowed -= 5;
-  setTimeout(questionThree, "500");
+  setTimeout(questionThree, "300");
 }
 // Question Three
 function questionThree() {
@@ -65,14 +65,14 @@ function questionThree() {
 
 function correctAlertMessage3() {
   document.getElementById("correctAlert3").style.display = "block";
-  setTimeout(questionFour, "500");
+  setTimeout(questionFour, "300");
   score += 20;
 }
 
 function incorrectAlertMessage3() {
   document.getElementById("incorrectAlert3").style.display = "block";
   secondsAllowed -= 5;
-  setTimeout(questionFour, "500");
+  setTimeout(questionFour, "300");
 }
 
 // Question Four
@@ -83,14 +83,14 @@ function questionFour() {
 
 function correctAlertMessage4() {
   document.getElementById("correctAlert4").style.display = "block";
-  setTimeout(questionFive, "500");
+  setTimeout(questionFive, "300");
   score += 20;
 }
 
 function incorrectAlertMessage4() {
   document.getElementById("incorrectAlert4").style.display = "block";
   secondsAllowed -= 5;
-  setTimeout(questionFive, "500");
+  setTimeout(questionFive, "300");
 }
 
 // Question Five
@@ -101,14 +101,14 @@ function questionFive() {
 
 function correctAlertMessage5() {
   document.getElementById("correctAlert5").style.display = "block";
-  setTimeout(resultScreen, "500");
+  setTimeout(resultScreen, "300");
   score += 20;
 }
 
 function incorrectAlertMessage5() {
   document.getElementById("incorrectAlert5").style.display = "block";
   secondsAllowed -= 5;
-  setTimeout(resultScreen, "500");
+  setTimeout(resultScreen, "300");
 }
 
 // Clean up code and consolidate. This is coded just to have a map of what this section needs to do.
